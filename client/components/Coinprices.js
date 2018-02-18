@@ -25,6 +25,7 @@ class Coinprices extends React.Component {
   }
 
   render () {
+    console.log(this.state.coinprices);
     return (
       <div>
       {this.state.coinprices.map((coin, idx) => <h1 key={idx}>{coin}</h1>)}

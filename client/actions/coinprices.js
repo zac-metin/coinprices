@@ -1,6 +1,5 @@
 
 export const receiveCoinprices = (coinprices) => {
-  console.log(coinprices);
   return {
     type: 'RECEIVE_COINPRICES',
     coinprices
