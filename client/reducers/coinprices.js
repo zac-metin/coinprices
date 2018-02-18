@@ -1,7 +1,7 @@
 function coinprices (state = [], action) {
   switch (action.type) {
     case 'RECEIVE_COINPRICES':
-      return [...action.coinprices]
+      return action.coinprices
     default:
       return state
   }

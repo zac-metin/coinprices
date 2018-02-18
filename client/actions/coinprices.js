@@ -9,9 +9,8 @@ export const receiveCoinprices = (coinprices) => {
 export function getCoinprices() {
   return (dispatch) => {
     var client = new HttpClient();
-    client.get('https://api.coinmarketcap.com/v1/ticker/?limit=10', function(res) {
-
-        dispatch(receiveCoinprices(res))
+    client.get('https://api.coinmarketcap.com/v1/ticker/?limit=1000', function(res) {
+      dispatch(receiveCoinprices(res))
     });
 
   }
@@ -20,9 +19,10 @@ export function getCoinprices() {
 var HttpClient = function() {
     this.get = function(aUrl, callback) {
         var req = new XMLHttpRequest();
+        req.responseType = 'json';
         req.onreadystatechange = function() {
-            if (req.status == 200)
-                callback(req.responseText);
+            if (req.readyState == 4 && req.status == 200)
+                callback(req.response);
         }
 
         req.open( "GET", aUrl, true );

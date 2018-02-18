@@ -6,6 +6,7 @@ const App = () => (
   <Router>
     <div className='app-container'>
       <Route exact path="/" component={Coinprices} />
+      <Route exact path="/:querystring" component={Coinprices} />
     </div>
   </Router>
 )

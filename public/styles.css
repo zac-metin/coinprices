@@ -1,7 +1,86 @@
-body {
+html, body {
   background-color: "blue";
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  padding: none;
+  margin: 0px;
 }
 
 button {
   background-color: "red";
+}
+#app, .app-container, .container {
+  height: inherit;
+  width: inherit;
+  max-width: inherit;
+}
+.container {
+ width: inherit;
+}
+.row {
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+}
+.symbol {
+  width: 15vw;
+  height: 15vw;
+  margin: auto;
+  text-align: center;
+  padding-top: 2vw;
+  font-size: 24px;
+  background-color: #37454e;
+  color: #64aede;
+}
+.name {
+  width: 51vw;
+  height: 15vw;
+  margin: auto;
+  text-align: left;
+  padding-left: 5vw;
+  padding-top: 2vw;
+  font-size: 24px;
+  background-color: #15232c;
+  color: #428bcb;
+}
+.price {
+  width: 34vw;
+  height: 15vw;
+  text-align: center;
+  font-size: 24px;
+  padding-top: 2vw;
+  margin: auto;
+  background-color: #37454e;
+  color: #eeeeee;
+}
+.changehr {
+  width: 33vw;
+  height: 5vw;
+  color: #ffffff;
+  background-color: #26343d;
+  border: 5px 1px 1px 1px #989898 solid;
+  text-align: center;
+}
+.changeday {
+  width: 33vw;
+  height: 5vw;
+  color: #ffffff;
+  background-color: #26343d;
+  border: 5px 1px 1px 1px #989898 solid;
+  text-align: center;
+}
+.changeweek {
+  width: 34vw;
+  height: 5vw;
+  color: #ffffff;
+  background-color: #26343d;
+  border: 5px 1px 1px 1px #989898 solid;
+  text-align: center;
+}
+#green {
+  color: #22bb22;
+}
+#red {
+  color: red;
 }
