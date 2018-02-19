@@ -37,6 +37,7 @@ class Coinprices extends React.Component {
     console.log(coinprices);
     return (
       <div className="container">
+        <div className="title twelve columns">CoinPrices</div>
        {coinprices.length > 0 && coinprices.map((coin, idx) =>
          <div><div key={idx} className="row">
           <div className="symbol three columns">{coin.symbol}</div>

@@ -3593,6 +3593,11 @@ var Coinprices = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'container' },
+        _react2.default.createElement(
+          'div',
+          { className: 'title twelve columns' },
+          'CoinPrices'
+        ),
         coinprices.length > 0 && coinprices.map(function (coin, idx) {
           return _react2.default.createElement(
             'div',
